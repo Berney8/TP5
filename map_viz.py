@@ -30,7 +30,16 @@ def add_choro_trace(fig, montreal_data, locations, z_vals, colorscale):
 
     '''
     # TODO : Draw the map base
-    return None
+    
+    updated_fig = fig.add_trace(go.Choroplethmapbox(
+        geojson=montreal_data,
+        locations=locations,
+        z=z_vals,
+        colorscale=colorscale,
+        opacity=0.2
+    ))
+    
+    return updated_fig
 
 
 def add_scatter_traces(fig, street_df):
