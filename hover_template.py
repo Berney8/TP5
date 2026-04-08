@@ -13,6 +13,8 @@ def map_base_hover_template():
             The hover template.
     '''
     # TODO : Generate the hover template
+    
+    
     return ''
 
 
